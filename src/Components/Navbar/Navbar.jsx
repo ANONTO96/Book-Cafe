@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import icon from "../../assets/book.ico"
 const Navbar = () => {
     return (
-        <div className="navbar bg-base-100 sticky top-0 backdrop-blur-md">
+        <div className="navbar bg-base-100">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -23,7 +23,7 @@ const Navbar = () => {
                         tabIndex={0}
                         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
                         <li><NavLink to= "/">Home</NavLink></li>
-                        <li><a>Listed Books</a></li>
+                        <li><NavLink to="/ListedBooks">Listed Books</NavLink></li>
                         <li><a>Pages to read</a></li>
                         <li>
                             <a>Address</a>
@@ -38,8 +38,8 @@ const Navbar = () => {
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1 font-medium">
-                    <li><a>Home</a></li>
-                    <li><a>Listed Books</a></li>
+                    <li><NavLink to= "/">Home</NavLink></li>
+                    <li><NavLink to="/ListedBooks">Listed Books</NavLink></li>
                     <li><a>Pages to Read</a></li>
                     <li>
                         <details>
